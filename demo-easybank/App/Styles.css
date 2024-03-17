@@ -1,0 +1,419 @@
+
+
+
+:root {
+    font-size: 18px;
+    scroll-behavior: smooth;
+
+    --white: hsl(0, 0%, 100%);
+    --Grayish-Blue: hsl(233, 8%, 62%);
+    --Light-Grayish-Blue: hsl(220, 16%, 96%);
+    --VeryLightGray: hsl(0, 0%, 98%);
+    --DarkBlue: hsl(233, 26%, 24%);
+    --LimeGreen: hsl(136, 65%, 51%);
+    --BrightCyan: hsl(192, 70%, 51%);
+    --bg-intro-mobile: url
+    --bg-intro-desktop: url
+    --card-padding: 5rem;
+
+    --size-0: 0rem; /* 0px / 0rem */
+    --size-10: 0.0625rem; /* 1px / 0.0625rem */
+    --size-20: 0.125rem; /* 2px / 0.125rem */
+    --size-30: 0.25rem; /* 4px / 0.25rem */
+    --size-40: 0.5rem; /* 8px / 0.5rem */
+    --size-50: 0.75rem; /* 12px / 0.75rem */
+    --size-60: 1rem; /* 16px / 1rem */
+    --size-70: 1.25rem; /* 20px / 1.25rem */
+    --size-80: 1.5rem; /* 24px / 1.5rem */
+    --size-90: 1.75rem; /* 28px / 1.75rem */
+    --size-100: 2rem; /* 32px / 2rem */
+    --size-110: 2.25rem; /* 36px / 2.25rem */
+    --size-120: 2.5rem; /* 40px / 2.5rem */
+    --size-130: 2.75rem; /* 44px / 2.75rem */
+    --size-140: 3rem; /* 48px / 3rem */
+}
+
+
+
+.rounded-btn{
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 25px; 
+    text-wrap: nowrap;
+    background-image: linear-gradient(to right,var(--LimeGreen), var(--BrightCyan)); /* Gradient colors */
+    color: #fff; /* Text color */
+    font-size: 12px; /* Font size */
+    text-align: center;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.rounded-btn:hover {
+    background-image: linear-gradient(to right, var(--BrightCyan), var(--LimeGreen)); /* Hover gradient colors */
+}
+
+.top-margin{
+    margin-top: 1rem;
+}
+.public-sans-300 {
+    font-family: "Public Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+
+}
+
+.public-sans-400 {
+    font-family: "Public Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.public-sans-700 {
+    font-family: "Public Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+}
+
+body {
+    margin: 0;
+    font-family: "Public Sans", sans-serif;
+}
+
+.picture-card {
+    background-color: var(--white);
+    margin: .5rem 0;
+    overflow: hidden;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    
+    max-height: 300px;
+    width: 200px;
+     flex-grow: 0;
+    flex-basis: 20%;
+}
+
+
+.picture-card-info {
+    padding: 0.8rem;
+    max-height: 50%;
+    min-height: 50%;
+}
+
+.picture-card-img {
+
+    max-height: 50%;
+    min-height: 50%;
+    overflow: hidden;
+    height: auto;
+    width: 100%;
+}
+
+.picture-card-img img {
+    height:100%; 
+    width:auto  ;
+
+    /* height: auto;
+    width: 100%; */
+}
+
+.author{
+    font-size: 10px;
+    padding: 0.5rem;
+}
+.title {
+    font-size: 28px;
+    padding: 0.5rem;
+    overflow: hidden;
+}
+.title-small{
+    font-size: 14px;
+    padding: 0.5rem;
+}
+.desc{
+    font-size: 12px;
+    color: var(--Grayish-Blue);
+}
+.navbar {
+    position: relative;
+    background-color: var(--white);
+    color: var(--Grayish-Blue);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 50px;
+    padding: 10px;
+    z-index: 1000;
+    
+}
+.logo{
+    height: 100%;
+}
+
+
+.menu-toggle {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.icon-hamburger {
+    display: flex;
+}
+
+.menu {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 2rem;
+}
+
+.menu li {
+    display: flex;
+    margin-right: 20px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: var(--Grayish-Blue);
+}
+
+.invite-card {}
+
+
+
+.invite-desc .btn-colder {}
+
+.card-holder {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: var(--card-padding);
+
+}
+
+.bggry {
+    background-color: darkgrey;
+}
+
+.bgred {
+    background-color: lightcoral;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+}
+
+.banner-card-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: -3rem;
+    overflow-x: clip;
+}
+
+.card-rest {
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    flex-wrap: wrap;
+    flex-grow: 1;
+}
+
+.banner {
+    /* top: -8rem; */
+    /* max-width: 50%; */
+    /* right: 0; */
+    position: relative;
+    background-image: var(--bg-intro-desktop);
+    background-position: left;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-width: 50%;
+    bottom: 0;
+    margin-bottom: -2.5rem;
+ 
+}
+
+.mobile {
+
+    position: relative;
+    margin-bottom: -5rem;
+    margin-right:-5rem;
+    /* padding-right: -5rem;
+    bottom: -5rem; */
+    img {
+        max-width: 100%;
+        position: relative;
+        /* right: -140px;
+        top: -100px; */
+    }
+}
+
+.feature-card {
+    display: flex;
+    flex-direction: column;
+    padding-right: 1rem;
+    flex-grow: 0;
+    flex-basis: 20%;
+}
+
+.feature-card-icon {
+    padding: 25px 0;
+    max-width: 50px;
+    display: flex;
+}
+
+.feature-card-icon img {
+    max-width: 100%;
+}
+
+.feature-card-title {
+    padding: 5px 0;
+
+}
+
+.feature-card-desc {
+    font-size: 12px;
+    color: var(--Grayish-Blue);
+}
+
+
+@media only screen and (max-width: 48em) {
+
+    .picture-card{
+        width: 100%;
+    }
+
+    .picture-card-img img {
+        /* height:100%; 
+        width:auto  ; */
+    
+        height: auto;
+        width: 100%;
+    }
+    .feature-card-icon {
+        align-self: center;
+    }
+
+    .feature-card {
+        text-align: center;
+    }
+
+    .navbar {
+        justify-content: space-between;
+    }
+
+    .banner-card-container {
+        flex-direction: column-reverse;
+        margin: 0;
+        
+    }
+
+    .banner {
+        width: 100%;
+        top: 0;
+        margin: 0;
+        background-image: var(--bg-intro-mobile);
+        position: relative;
+        overflow: hidden;
+    }
+
+
+    .card-holder {
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+    }
+
+    .card-rest {
+        flex-direction: column;
+    }
+
+    .mobile {
+        right: 0;
+        bottom: 0;
+        margin: 0;
+    }
+
+    .invite-btn-nav {
+        display: none;
+    }
+
+    .banner img {
+        margin-top: -12rem;
+    }
+
+
+    .inactive {
+        display: none;
+    }
+
+    .menu {
+        flex-direction: column;
+        background-origin: content-box;
+        background-color: var(--VeryLightGray);
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        box-sizing: border-box;
+        padding: 1rem;
+        background-clip: content-box;
+        border-radius: 1.2rem;
+
+    }
+
+    .menu .item {
+        padding: 0.2rem;
+        display: flex;
+        justify-content: center;
+    }
+
+    .menu-toggle {
+        display: flex;
+    }
+
+
+}
+
+/* ## Layout
+
+The designs were created to the following widths:
+
+- Mobile: 375px
+- Desktop: 1440px
+
+> 💡 These are just the design sizes. Ensure content is responsive and meets WCAG requirements by testing the full range of screen sizes from 320px to large screens.
+
+## Colors
+
+### Primary
+
+- Dark Blue: hsl(233, 26%, 24%)   footer container, maybe letters
+- Lime Green: hsl(136, 65%, 51%)  request invite
+- Bright Cyan: hsl(192, 70%, 51%)   request invite
+
+### Neutral
+
+- Grayish Blue: hsl(233, 8%, 62%)   easy bank footer
+- Light Grayish Blue: hsl(220, 16%, 96%)  text body, middle container?
+- Very Light Gray: hsl(0, 0%, 98%)   first container
+- White: hsl(0, 0%, 100%)
+
+## Typography
+
+### Body Copy
+
+- Font size: 18px
+
+### Font
+
+- Family: [Public Sans](https://fonts.google.com/specimen/Public+Sans)
+- Weights: 300, 400, 700 */
