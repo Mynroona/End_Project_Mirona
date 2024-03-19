@@ -2,9 +2,7 @@
 
 
 :root {
-    font-size: 18px;
-    scroll-behavior: smooth;
-
+ 
     --white: hsl(0, 0%, 100%);
     --Grayish-Blue: hsl(233, 8%, 62%);
     --Light-Grayish-Blue: hsl(220, 16%, 96%);
@@ -12,8 +10,8 @@
     --DarkBlue: hsl(233, 26%, 24%);
     --LimeGreen: hsl(136, 65%, 51%);
     --BrightCyan: hsl(192, 70%, 51%);
-    --bg-intro-mobile: url
-    --bg-intro-desktop: url
+    --bg-intro-mobile: url('./images/bg-intro-mobile.svg');
+    --bg-intro-desktop: url('./images/bg-intro-desktop.svg');
     --card-padding: 5rem;
 
     --size-0: 0rem; /* 0px / 0rem */
@@ -35,27 +33,33 @@
 
 
 
-.rounded-btn{
+.rounded-btn {
     display: inline-block;
     padding: 10px 20px;
-    border-radius: 25px; 
+    border-radius: 25px;
     text-wrap: nowrap;
-    background-image: linear-gradient(to right,var(--LimeGreen), var(--BrightCyan)); /* Gradient colors */
-    color: #fff; /* Text color */
-    font-size: 12px; /* Font size */
+    background-image: linear-gradient(to right, var(--LimeGreen), var(--BrightCyan));
+    /* Gradient colors */
+    color: #fff;
+    /* Text color */
+    font-size: 12px;
+    /* Font size */
     text-align: center;
     text-decoration: none;
     border: none;
     cursor: pointer;
     transition: background-color 0.3s ease;
 }
+
 .rounded-btn:hover {
-    background-image: linear-gradient(to right, var(--BrightCyan), var(--LimeGreen)); /* Hover gradient colors */
+    background-image: linear-gradient(to right, var(--BrightCyan), var(--LimeGreen));
+    /* Hover gradient colors */
 }
 
-.top-margin{
+.top-margin {
     margin-top: 1rem;
 }
+
 .public-sans-300 {
     font-family: "Public Sans", sans-serif;
     font-optical-sizing: auto;
@@ -83,6 +87,41 @@ body {
     font-family: "Public Sans", sans-serif;
 }
 
+.footer-menu {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 10px;
+    
+}
+
+.part {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 0 2rem;
+}
+
+.footer-card {
+    padding: 2rem var(--card-padding);
+    background-color: Var(--DarkBlue);
+    color: var(--VeryLightGray);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 5px;
+}
+
+.icon-holder{
+    display: flex;
+    justify-content: space-between;
+}
+.footer-icon {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
 .picture-card {
     background-color: var(--white);
     margin: .5rem 0;
@@ -90,11 +129,11 @@ body {
     border-radius: 5px;
     display: flex;
     flex-direction: column;
-    
-    max-height: 300px;
-    width: 200px;
-     flex-grow: 0;
-    flex-basis: 20%;
+
+    max-height: 400px;
+    width: auto;
+    flex-grow: 0;
+    flex-basis: 22%;
 }
 
 
@@ -114,30 +153,34 @@ body {
 }
 
 .picture-card-img img {
-    height:100%; 
-    width:auto  ;
+    height: 100%;
+    width: auto;
 
     /* height: auto;
     width: 100%; */
 }
 
-.author{
+.author {
     font-size: 10px;
     padding: 0.5rem;
 }
+
 .title {
     font-size: 28px;
     padding: 0.5rem;
     overflow: hidden;
 }
-.title-small{
+
+.title-small {
     font-size: 14px;
     padding: 0.5rem;
 }
-.desc{
+
+.desc {
     font-size: 12px;
     color: var(--Grayish-Blue);
 }
+
 .navbar {
     position: relative;
     background-color: var(--white);
@@ -148,9 +191,10 @@ body {
     margin: 0 50px;
     padding: 10px;
     z-index: 1000;
-    
+
 }
-.logo{
+
+.logo {
     height: 100%;
 }
 
@@ -239,14 +283,15 @@ body {
     min-width: 50%;
     bottom: 0;
     margin-bottom: -2.5rem;
- 
+
 }
 
 .mobile {
 
     position: relative;
     margin-bottom: -5rem;
-    margin-right:-5rem;
+    margin-right: -5rem;
+
     /* padding-right: -5rem;
     bottom: -5rem; */
     img {
@@ -262,7 +307,7 @@ body {
     flex-direction: column;
     padding-right: 1rem;
     flex-grow: 0;
-    flex-basis: 20%;
+    flex-basis: 22%;
 }
 
 .feature-card-icon {
@@ -285,20 +330,25 @@ body {
     color: var(--Grayish-Blue);
 }
 
+.cp {
+    font-size: 12px;
+    font-weight:300;
+}
 
 @media only screen and (max-width: 48em) {
 
-    .picture-card{
+    .picture-card {
         width: 100%;
     }
 
     .picture-card-img img {
         /* height:100%; 
         width:auto  ; */
-    
+
         height: auto;
         width: 100%;
     }
+
     .feature-card-icon {
         align-self: center;
     }
@@ -314,7 +364,17 @@ body {
     .banner-card-container {
         flex-direction: column-reverse;
         margin: 0;
-        
+
+    }
+
+    .footer-card {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 10px;
+    }
+    .footer-menu {
+        flex-direction: column;
     }
 
     .banner {
@@ -380,40 +440,5 @@ body {
         display: flex;
     }
 
-
+    
 }
-
-/* ## Layout
-
-The designs were created to the following widths:
-
-- Mobile: 375px
-- Desktop: 1440px
-
-> 💡 These are just the design sizes. Ensure content is responsive and meets WCAG requirements by testing the full range of screen sizes from 320px to large screens.
-
-## Colors
-
-### Primary
-
-- Dark Blue: hsl(233, 26%, 24%)   footer container, maybe letters
-- Lime Green: hsl(136, 65%, 51%)  request invite
-- Bright Cyan: hsl(192, 70%, 51%)   request invite
-
-### Neutral
-
-- Grayish Blue: hsl(233, 8%, 62%)   easy bank footer
-- Light Grayish Blue: hsl(220, 16%, 96%)  text body, middle container?
-- Very Light Gray: hsl(0, 0%, 98%)   first container
-- White: hsl(0, 0%, 100%)
-
-## Typography
-
-### Body Copy
-
-- Font size: 18px
-
-### Font
-
-- Family: [Public Sans](https://fonts.google.com/specimen/Public+Sans)
-- Weights: 300, 400, 700 */
